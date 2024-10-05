@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Post(models.Model):
-    tittle = models.CharField(max_length = 200)
+    title = models.CharField(max_length = 200)
     body = models.TextField()
     author = models.ForeignKey(
         "auth.user",
@@ -11,4 +11,4 @@ class Post(models.Model):
     )
 
     def __str__(self) -> str:
-        return self.tittle
+        return self.titlec

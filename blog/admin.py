@@ -4,13 +4,13 @@ from .models import Post
 
 class PostAdmin(admin.ModelAdmin):
     list_display = (
-        "tittle",
+        "title",
         "body",
         "author",
     )
     list_filter = (
       "author",
-      "tittle",
+      "title",
     )
 
 admin.site.register(Post, PostAdmin)
